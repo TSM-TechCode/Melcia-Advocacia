@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Melcia Advocacia</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Melcia.Ad</h1>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#services">Serviços</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <img src="images/IMG_20260509_101248_978.jpg"
+           alt="Imagem de Luís Felipe | Especialista em advocacia">
+
+      <button class="btn">Serviços</button>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+
+    <div class="card">
+      <ul>
+        <li>Especialista em Direito do Consumidor</li>
+        <li>Especialista em Direito Criminal</li>
+        <li>Especialista em Plano de Saúde</li>
+        <li>+5 artigos científicos publicados</li>
+        <li>Certificado de Harvard</li>
+        <li>1 prêmio nacional jurídico</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Serviços</h2>
+
+    <div class="card">
+      <ul>
+        <li>Direito do Consumidor</li>
+        <li>Plano de Saúde</li>
+        <li>Direito Criminal</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="card">
+      <ul>
+        <li>Whatsapp: 71 99332-7345</li>
+        <li>Instagram: @luismelcia</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 TSM-TechCode & Melcia Advocacia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.btn');
+
+    function scrollToSection() {
+      document.querySelector('#services')
+        .scrollIntoView({
+          behavior: 'smooth'
+        });
+    }
+
+    btn.onclick = scrollToSection;
+  </script>
+
+</body>
+</html>
